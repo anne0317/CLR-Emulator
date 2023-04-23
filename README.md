@@ -1,11 +1,11 @@
 # CLR-Emulator
 
-Introduction
+# Introduction
 This is an implementation of a CLR parser in Python. A CLR parser is a bottom-up parsing method based on the LR(1) parsing method. The implementation uses a parsing table to parse the input string. The parsing table is generated from the grammar of the language to be parsed.
 
 This implementation includes code for generating the CLR parsing table from the grammar and the input string. It also includes code for the parsing process itself.
 
-Dependencies
+# Dependencies
 Python 3.x
 Usage
 To use this implementation of a CLR parser, simply run the main() function in the firstfollow module. This function prompts the user to enter the productions of the grammar, and then generates the first and follow sets for the non-terminals in the grammar.
@@ -14,7 +14,7 @@ After generating the first and follow sets, the parsing_table() function in the 
 
 Once the parsing table has been generated, it can be used to parse an input string using the parse() function in the parser module. The parse() function takes the input string and the parsing table as inputs, and returns a parse tree if the string is valid, or raises an exception if the string is invalid.
 
-Modules
+# Modules
 This implementation includes the following modules:
 
 firstfollow
@@ -26,7 +26,7 @@ This module contains code for generating the CLR parsing table for the grammar. 
 parser
 This module contains code for parsing an input string using the CLR parsing table. The parse() function in this module takes the input string and the parsing table as inputs, and returns a parse tree if the string is valid, or raises an exception if the string is invalid.
 
-Example
+# Example
 The following is an example of how to use this implementation of a CLR parser:
 
 python
@@ -45,5 +45,5 @@ table = parsing_table()
 input_string = "id + id * id"
 parse(input_string, table)
 
-Acknowledgements
+# Acknowledgements
 This implementation is based on the algorithm described in the book "Compilers: Principles, Techniques, and Tools" by Aho, Sethi, and Ullman. The implementation was developed by Bhanu, Ananya and Anasua.
